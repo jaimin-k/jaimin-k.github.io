@@ -14,7 +14,7 @@ body {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   left: 0;
   right: 0;
-  overflow: overlay;
+  overflow: initial;
   width: auto;
 }
 
