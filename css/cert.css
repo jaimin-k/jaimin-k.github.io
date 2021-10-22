@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  font: 600 62.5% "Lato", sans-serif;
+  background-color: #ffff;
+}
+
+a {
+  text-decoration-style: solid;
+  white-space: nowrap;
+  font-size: 1rem;
+  color: #000;
+}
+a.tag {
+  display: flex;
+  padding: 0.3em 0.85em;
+  margin: 0.5em;
+  text-transform: uppercase;
+  border: 3px solid #28242f;
+  border-radius: 2em;
+  transition: transform 0.2s;
+  transition-timing-function: cubic-bezier(0.45, -0.85, 0.55, -0.45);
+}
+a.tag:hover {
+  transform: scale(1.1);
+  background: linear-gradient(to right, #ff8a00, #da1b60);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container {
+  margin: 2em 6em;
+  padding: 2em;
+  padding-left: 1em;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: left;
+  font-size: 1rem;
+  color: #000;
+  border: 1px solid #28242f;
+  border-radius: 0.35em;
+  background-color: #fff;
+  background-image: url(https://css-tricks.com/wp-content/themes/CSS-Tricks-17/images/featured-comment.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 70% 50%;
+  box-shadow: 0 10px 60px #fff;
+}
+.container .tags {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .tags span {
+  margin-right: -1em;
+  padding: 2em;
+  text-transform: uppercase;
+  transform: rotate(0deg);
+  writing-mode: horizontal-rl;
+  border-left: 3px solid #28242f;
+  background: linear-gradient(to right, #ff8a00, #da1b60);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container .tags a:last-child {
+  margin-left: 0.5em;
+}
+.container .tags a:last-child:hover {
+  color: white;
+}
+

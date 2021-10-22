@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Jaimin-k/projects</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css'>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="menu.html"></script>
+  <style>
+    .menu-index {
+      color: rgb(255, 255, 255) !important;
+      opacity: 1 !important;
+      font-weight: 700 !important;
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/e80ecff042.js" crossorigin="anonymous"></script>
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Muli:400,700&display=swap");
+
+        body {
+        margin: 0;
+        height: calc(100vh - 8em);
+        font-family: "Muli", sans-serif;
+        }
+        img {
+        object-fit: cover;
+        height: 210px;
+        width: 300px;
+        }
+
+        .slideshow {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        }
+
+        .items {
+        width: 50vw;
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        animation: carouselAnim 40s infinite alternate linear;
+        }
+
+        .entry {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+       /* width: 450px;
+        height: 550px; */
+        background: #fff;
+        margin: 0.5em;
+        padding: 0em;
+        border-radius: 0px;
+        box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.35);
+        }
+
+        @media only screen and (max-width: 768px) {
+        .items {
+            animation: carouselAnim 35s infinite alternate linear;
+        }
+        
+        @keyframes carouselAnim {
+            from {
+            transform: translate(0, 0);
+            }
+            to {
+            transform: translate(calc(-100% + (2 * 200px)));
+            }
+        }
+        }
+
+        .entry h3 {
+        font-size: 1.4em;
+        text-align: center;
+        }
+
+        .entry p {
+        font-size: 1em;
+        text-align: center;
+        margin: 1em;
+        }
+
+        .name {
+        font-weight: bold;
+        }
+
+        @keyframes carouselAnim {
+        from {
+            transform: translate(0, 0);
+        }
+        to {
+            transform: translate(calc(-100% + (6 * 200px)));
+        }
+        }
+
+        .prev-next-button {
+        position: absolute;
+        top: 40%;
+        width: 60px;
+        height: 60px;
+        transform: translateY(-50%);
+        z-index: 250;
+        }
+
+        .btn_prev { left: 5px; }
+        .btn_next { right: 5px; }
+
+        .prev-next-button i{
+        position: absolute;
+        left: 20%;
+        top: 20%;
+        width: 60%;
+        height: 60%;
+        }
+        .footer {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        margin-top: 34px;
+        font-size: x-small ;
+        width: 100%;
+        background-color: rgb(54, 54, 54);
+        color: white;
+        text-align: center;}
+        .jumbotron {
+        margin-top: 2em!important;
+        padding-top: 5px;
+        padding-bottom: 0px;
+        padding-left: 30px;
+        margin-bottom: 2px;
+        margin-left: 85px;
+        margin-right: 85px
+    }
+  </style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="menu-container">
+  <div class="menu">
+    <div class="menu-table flex-row-space-between">
+      <div class="logo flex-row-center">
+        <a href="index.html">Jaimin Kachhadiya</a>
+      </div>
+      <a class="menu-button" tabindex="0" href="javascript:void(0)">
+        <img src="img/menu.png">
+      </a>
+      <div class="menu-items flex-row-center flex-item">
+        <a href="index.html" class="menu-items">Home</a>
+        <a href="aboutme.html" class="menu-items">About me</a>
+        <a href="projects-def.html" class="menu-items">Projects</a>
+        <a href="research.html" class="menu-index">Research</a>
+        <a href="#">CV</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div class="jumbotron">
+  <p> <h2 class="display-5"></h2>
+      <p class="lead" style="text-align:justify"><u>Research Statement</u></p>
+      
+      
+      <p  style="text-align:justify">My research Interests lie at an intersection of Machine learning, autonomous vehicle and computer vision with a focus on incremental developments in ADAS that aids in autonomous driving, processing information of and outside the vehicle and making decisions for safe navigation. My long-term research goal is to develop a methodology for robust real-time decision-making in autonomous systems.
+      </p>My research agenda is primarily focused on:<br>
+<b>1.	Deploy Reinforcement Learning driving policies on simulator and transfer to real environment:</b><br>
+<p  style="text-align:justify">According to RAND Corporation, to demonstrate that fully autonomous vehicles have a fatality rate of 1.09 fatalities per 100 million miles, the vehicles would have to be driven 275 million failure-free miles. With a fleet of 100 autonomous vehicles being test-driven 24 hours a day, 365 days a year at an average speed of 25 miles per hour, this would take about 12.5 years. This has to be tested on public roads, but physical testing directly on public roads is unsafe, costly, and not always reproducible. This is where testing in simulation helps fill the gap. However, the problem with simulation testing is that it is only as good as the simulator used for testing and how representative the simulated scenarios are of the real environment. A key role in testing and training self-driving cars is rigorously performing trails on simulator for it to handle situations as expected on public roads. This drives my interest further into implementing sim2real transfer of trained RL driving policies to bridge the ‘reality gap’. <br> With Reinforcement Learning, an autonomous agent learns to improve its performance at an assigned task by interacting with its environment. For each state experienced, the agent chooses an action and receives an occasional reward from its environment based on the usefulness of its decision. The goal for the agent is to maximize the cumulative rewards received over its lifetime. Gradually, the agent can increase its long-term reward by exploiting knowledge learned about the expected future rewards of different state action pairs. To manage the trade-off between exploration and exploitation is one of the main challenges in reinforcement learning. To maximize the rewards it receives, an agent must exploit its knowledge by selecting actions which are known to result in high rewards. For discovering such beneficial actions, it has to take the risk of trying new actions which may lead to higher rewards than the current best-valued actions for each system state. Thus, the learning agent must exploit what it already knows in order to obtain rewards, but it also has to explore the unknown in order to make better action selections in the future.<br> Examples of strategies which have been proposed to manage this trade-off include ԑ-greedy and softmax. When adopting the ԑ-greedy strategy, an action is selected by the agent at random with probability 0 < ԑ < 1, or the agent greedily selects the highest valued action for the current state with the remaining probability 1 − ԑ. Intuitively, the agent should explore more at the beginning of the training process when little is known about the problem environment. As training progresses, the agent may gradually conduct more exploitation than exploration. The design of exploration strategies for RL agents in a highly dynamic and uncertain environment for AV is challenging.
+</p><br><br><b> 2. Computer Vision in autonomous driving:</b><br>
+<p  style="text-align:justify">Autonomous driving requires reliable and accurate detection and recognition of surrounding objects in real drivable environments. Although different object detection algorithms have been proposed, not all are robust enough to detect and recognize occluded or truncated objects in adverse weather conditions and make correct decisions. Though radar can supplement cameras in low visibility, precise detection of surrounding objects is difficult. Use of Lidars provides the required added information of the surrounding with HD maps. But the environment has to be pre-mapped with the LiDAR and add all the lanes and their connections along with traffic lights post creating HD Maps. Thus building these High-Definition maps are not scalable, as it is difficult to map each location the car would travel.<br> The ability to perceive and understand surrounding road-users behaviors is also crucial for self-driving vehicles to plan reliable reactions. Computer vision that relies mostly on machine learning techniques enables autonomous vehicles to perform several required tasks such as pedestrian detection. Though pedestrians can be tracked with 3D bounding boxes along with their pose with libraries like OpenPose or Mediapipe, predicting their uncertain movement is challenging in crowded areas due to occlusion.
+</p><br></p>
+</div>
+<div class="slideshow" id="slideshow">
+    <div class="myCarousel">
+      <div class="items">
+      
+      <div class="entry">
+        
+        <img src="res/res21/asset/asset/img/res0.jpg" height="640px" width="420px" />
+        
+      </div>
+      <div class="entry">
+        
+        <img src="res/res21/asset/asset/img/res2.jpeg" height="640px" width="420px">
+        
+      </div>
+      <div class="entry">
+        
+        <img src="res/res21/asset/asset/img/res3.jpeg" />
+        
+      </div>
+      <div class="entry">
+        
+        <img src="res/res21/asset/asset/img/res3.jpg"  />
+        
+      </div>
+      <div class="entry">
+        
+        <img src="res/res21/asset/asset/img/res3.png"  />
+        
+      </div>
+      <div class="entry">
+        
+        <img src="res/res21/asset/asset/img/res5.jpg"  />
+        
+      </div>
+      
+    </div>
+      <!-- Left and right controls -->
+      <div class="slideshow-controls">
+    <div id="btn_prev" class="prev-next-button btn_prev">
+        <i class="fas fa-caret-square-left fa-2x"></i>
+    </div>
+    <div id="btn_next" class="prev-next-button btn_next">
+        <i class="fas fa-caret-square-right fa-2x"></i>
+    </div>
+  </div>
+  </div>
+  </div>
+  <div class="footer">
+    <p>Copyright © 2021. Jaimin Kachhadiya. All trademarks, logos and brand names are the property of their respective owners.</p>
+  </div>
+</body>
+</html>

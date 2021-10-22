@@ -1,0 +1,52 @@
+body
+  font-family: 'Roboto', sans-serif
+.projectBox
+    width: 300px
+    display: block
+    margin: 100px auto
+.card
+    height: 350px
+    border-radius: 5px
+    box-shadow: 0px 0px 45px 0px rgba(0,0,0,0.5)
+    overflow: hidden
+    transition: .4s
+    text-transform: uppercase
+    text-align: center
+    a
+        text-decoration: none
+        color: #101010
+    &:hover
+        box-shadow: 0px 0px 55px 0px rgba(0,0,0,0.8)
+    .thumb
+        width: auto
+        height: 260px
+        background: url("https://codevoke.pl/wp-content/uploads/2020/01/andrzejpodajpiwo.png") no-repeat center
+    .infos
+        padding: 14px 24px
+        background: #fff
+        transition: 0.4s
+        h2
+            font-weight: 300
+            color: #101010
+        h3
+            text-align: center
+            margin-bottom: 10px
+            font-size: 15px
+            padding-bottom: 5px
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+            opacity: 0
+            transition: .5s
+        p
+            font-size: 15px
+            text-align: left
+            text-transform: none
+            color: #101010
+            opacity: 0
+            transition: .5s
+
+    &:hover .infos
+        transform: translateY(-260px)
+        a
+            color: #101010 !important
+        .seats, p, .details
+            opacity: 1

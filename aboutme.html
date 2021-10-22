@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Jaimin-k/about_me</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css'>
+  <meta charset="utf-8" name="viewport" content="", initial-scale=1">
+  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="menu.html"></script>
+  <script src="css/footer.css"></script>
+
+  <meta charset="UTF-8">
+  <title>Timeline</title>
+  <link rel="stylesheet" href="dist2/style.css">
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Lato");
+
+    a {
+      text-decoration: none;
+      white-space: nowrap;
+      font-size: 1rem;
+      color: #000;
+    }
+    a.tag {
+      display: flex;
+      padding: 0.1em 0.85em;
+      font-family: Lato;
+      margin: 0.3em;
+      font-weight: 500;
+      border: 2px solid #28242f;
+      border-radius: 0.8em;
+      transition: transform 0.2s;
+      transition-timing-function: cubic-bezier(0.45, -0.85, 0.55, -0.45);
+    }
+    a.tag:hover {
+      transform: scale(1.02);
+      font-family: Lato;
+      font-weight: 600;
+      background: linear-gradient(to right, #0077ff, #1b94da);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .container {
+      margin: 0px 0px 20px 0px;
+      padding: 2em;
+      padding-left: 1em;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: space-between;
+      align-items: left;
+      font-size: 1rem;
+      color: #000;
+      border: 1px solid #28242f;
+      border-radius: 0.35em;
+      background-color: #fff;
+      background-image: url(https://css-tricks.com/wp-content/themes/CSS-Tricks-17/images/featured-comment.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 70% 50%;
+      box-shadow: 0 10px 60px #fff;
+    }
+    .container .tags {
+      margin: 0;
+      display: flex;
+      font-size: larger;
+      text-transform: capitalize;
+      justify-content: center;
+      align-items: baseline;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+    .container .tags span {
+      margin-right: 0em;
+      padding: 11px;
+      text-transform: capitalize;
+      transform: rotate(0deg);
+      font-weight: bold;
+      writing-mode: horizontal-rl;
+      border-left: 3px solid #28242f;
+      background: linear-gradient(to right, #00458f, #005688);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .container .tags a:last-child {
+      margin-left: 0.5em;
+    }
+    .container .tags a:last-child:hover {
+      color: white;
+    }
+
+
+  </style>
+  <style>
+      .footer {
+      position: relative;
+      left: 0;
+      bottom: -20px;
+      
+      font-size: x-small ;
+      width: 150%;
+      background-color: rgb(54, 54, 54);
+      color: white;
+      text-align: center;
+      margin-left: -240px;
+      }
+    
+    
+    .grid-container {
+      display: grid;
+      grid-template-columns: 200px 200px 200px 0px;
+      grid-gap: 10px;
+      padding-right: 1000px;
+    }
+    
+    .projectBox {
+      width: 200px;
+      display: block;
+      margin: 10px auto;
+      padding-left: 0px;
+    }
+    
+    .card {
+      height: 210px;
+      margin-left: 0px;
+      display: inline-block ;
+      margin-right: 0px;
+      margin-top: 15px;
+      padding-left: 0px;
+      padding-top: 0px;
+      padding-right: 0px;
+      border-radius: 4px;
+      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      transition: 0.2s;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    .card a {
+      text-decoration: none;
+      color: #101010;
+    }
+    .card:hover {
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    }
+    .card .thumb {
+      width: 200px;
+      height: 110px;
+      margin-left: 0px;
+      padding-left: 0px;
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+      background: url("") no-repeat center;
+    }
+    .card .infos {
+      padding: 0px 0px;
+      background: #fff;
+      
+      padding-top: 0px;
+      transition: 0.4s;
+    }
+    .card .infos h6 {
+      font-size: 15px;
+      font-weight: 520;
+      padding-top: 0px;
+      color: #101010;
+      text-transform: capitalize;
+    }
+    .card .infos h7 {
+      font-size: 13px;
+      font-weight: 450;
+      padding-bottom: 10px;
+      color: #101010;
+      text-transform: capitalize;
+    }
+    .card .infos h2 {
+      font-weight: 300;
+      color: #101010;
+    }
+    .card .infos h3 {
+      text-align: center;
+      padding-top: 0px;
+      margin-bottom: -100px;
+      font-size: 12px;
+      text-transform: none;
+      font-weight: lighter;
+      padding-bottom: -20px;
+      border-bottom: 0px solid rgba(0, 0, 0, 0.2);
+      opacity: 0;
+      transition: 0.5s;
+    }
+    .card .infos p {
+      font-size: 13px;
+      text-align: left;
+      text-transform: ;
+      
+      color: #101010;
+      opacity: 0;
+      transition: 0.5s;
+    }
+    .card:hover .infos {
+      
+      transform: translateY(-10px);
+    }
+    .card:hover .infos a {
+      text-decoration: underline;
+      color: #101010 !important;
+    }
+    .card:hover .infos .seats, .card:hover .infos p, .card:hover .infos .details {
+      opacity: 1;
+    }
+
+    .menu-index {
+      color: rgb(255, 255, 255) !important;
+      opacity: 1 !important;
+      font-weight: 700 !important;
+    }
+    .container {
+    color:white;
+    margin: 100 auto;
+    float: left;
+    margin-right: 0px;
+    }
+
+
+    .images img {
+    height:110px;
+    padding-right: 2px;
+    padding-bottom: 5px;
+    }
+  </style>
+  
+  <style>
+    .video-container {
+    overflow-x: hidden;
+    position: relative;
+    left: 515px;
+    top:-127px;
+    width:50%;
+    
+    }
+
+    .video-container::after {
+    padding-top: 56.25%;
+    display: inside;
+    position: relative;
+    content: '';
+
+   }
+
+    .video-container iframe {
+    position: relative;
+    
+    left: 100;
+    width: 420px;
+    height: 350px;
+    }
+
+    .three h1 {
+      font-size: 28px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 800em;
+      
+      padding-bottom: 15px;
+      position: relative;
+    }
+    .three h1:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 5px;
+      width: 50px;
+      background-color: #111;
+    }
+    .three h1:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0px;
+      bottom: 2px;
+      height: 1px;
+      width: 100%;
+      max-width: px;
+      background-color: #333;
+    } 
+    .jumbotron {
+        margin-top: 1em!important;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        padding-left: 20px;
+        margin-bottom: 2px;
+        margin-left: 0px;
+        padding-right: 7px;
+      }
+  </style>
+
+</head>
+<body>
+  
+<!-- partial:index.partial.html -->
+<div class="menu-container">
+    <div class="menu">
+      <div class="menu-table flex-row-space-between">
+        <div class="logo flex-row-center">
+          <a href="index.html">Jaimin Kachhadiya</a>
+        </div>
+        <a class="menu-button" tabindex="0" href="javascript:void(0)">
+          <img src="img/menu.png">
+        </a>
+        <div class="menu-items flex-row-center flex-item">
+          <a href="index.html" class="menu-items">Home</a>
+          <a href="aboutme.html" class="menu-index">About me</a>
+          <a href="projects-def.html" class="menu-items">Projects</a>
+          <a href="research.html" class="menu-items">Research</a>
+          <a href="#">CV</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+    
+      <div class="widget">
+        <div class="widget__body">
+          
+          <ul class="timeline">
+            
+            
+            <p> </width><h2  class="display-5">Education:</h2><div class="three">
+              <h1></h1>  
+            
+              <br>
+            <li>
+              <h2 class="title">Bachelor of Engineering- Electronics</h2>
+              <div class="information">
+                <br>
+                <span class="location">2016-2020 </span>
+                
+              </div>
+              <strong>&#64;</strong><a href="https://djsce.ac.in/">DJSCOE- Mumbai University</a>
+         
+            </li>
+            <li>
+              <h2 class="title">High School- Computer Science</h2>
+              <div class="information">
+              
+                <span class="location">2014-2016</span>
+                
+              </div>
+              <strong>&#64;</strong><a href="https://www.tcsc.edu.in/">Thakur College of Science</a>
+              
+            </li>
+            <br>
+            
+          </ul>
+
+
+          <p> </width><h2  class="display-5">Technical Skills:</h2><div class="three">
+            <h1></h1> 
+            
+          <div class="container">
+            <p class="tags"> <span>Languages - </span><a class="tag" href="">Python</a><a class="tag" href="#">Matlab</a><a class="tag active" href="#">C++</a><a class="tag" href="#">HTML</a>
+            <a class="tag" href="#">CSS</a>
+            
+            <hr style="margin-top: 10px; background: rgba(201, 201, 201, 0.788);"><p class="tags"> <span>Libraries - </span><a class="tag" href="#">OpenCV</a><a class="tag" href="#">TensorFlow</a><a class="tag active" href="#">Keras</a>
+              <a class="tag" href="#">scikit-learn</a><a class="tag" href="#">Pandas</a><a class="tag active" href="#">NumPy</a><a class="tag" href="#">Mediapipe</a>
+              
+            <hr style="margin-top: 10px; background: rgba(201, 201, 201, 0.788);"><p class="tags"> <span>CNN Architectures - </span><a class="tag" href="#">Mask-RCNN</a><a class="tag" href="#">MobileNet-SSD</a><a class="tag active" href="#">NVIDIA</a><a class="tag" href="#">LeNet-5</a>
+            <a class="tag" href="#">YOLO</a>
+            <hr style="margin-top: 10px; background: rgba(201, 201, 201, 0.788);"><p class="tags"> <span>Software/Platforms - </span><a class="tag" href="#">CARLA</a><a class="tag" href="#">Altium</a><a class="tag active" href="#">AutoCAD</a><a class="tag" href="#">KiCAD</a>
+              <a class="tag" href="#">Proteus</a><a class="tag" href="#">LTSpice</a>
+              
+          </div>
+          <p> </width><h2  class="display-5">Key Courses Undertaken:</h2><div class="three">
+            <h1></h1> 
+          
+            <div class="container">
+              <p class="tags"> <span>Electronics - </span><a class="tag" href="">Electronic Devices & Circuits</a><a class="tag" href="#">Microcontroller & Applications</a><a class="tag" href="">Electrical Network Analysis</a><a class="tag active" href="#">Microprocessors & Applications</a><a class="tag" href="#">Digital Linear Integrated Circuits</a>
+              <a class="tag" href="#">Engineering Electromagnetics</a><a class="tag" href="#">VLSI</a><a class="tag" href="#">IoT</a><a class="tag" href="#">Digital Communication</a><a class="tag" href="#">Power Electronics</a><a class="tag" href="#">Linear control system</a><a class="tag" href="#">Digital System Design</a><a class="tag" href="#">Digital Signal & Image Processing</a>
+              
+              <hr style="margin-top: 10px; background: rgba(201, 201, 201, 0.788);"><p class="tags"> <span>Computer Science - </span><a class="tag" href="#">Structured Programming Approach</a><a class="tag" href="#">Object Oriented Programming Methodology</a><a class="tag" href="#">Database Management System</a><a class="tag" href="#">Real Time Operating System</a><a class="tag active" href="#">Neural Network & Fuzzy Logic</a>
+               
+                
+              
+            </div>
+         
+       <div class="grid-container">
+        <div class="projectBox">
+          <div class="card">
+            <div class="thumb"><img src="res/res21/asset/asset/img/dlai.png" width="180" height="65" style="margin-inline-start: 1%;margin: 6px 2px 0px 2px;"></div>
+            <div class="infos">
+              <h6>Neural Networks and Deep Learning</h6> <h7>May21</h7>
+              <h3 class="seats"><a href="https://drive.google.com/file/d/1KINRUkPYaGq9GXNiQRCwVNQVjjgAQENk/view?usp=sharing" target="_blank" rel="noopener">View  Certificate</a></h3>
+              
+            </div>
+            
+          </div>
+           
+          </div> 
+
+          <div class="projectBox">
+            <div class="card">
+              <div class="thumb"><img src="res/res21/asset/asset/img/ut.png" width="180" height="125" style="margin-inline-start: 1%;margin: -3px 2px 0px 2px;"></div>
+              <div class="infos">
+                <h6>Self-Driving Cars: Specialization</h6> <h7>Sept21</h7>
+                <h3 class="seats"><a href="https://drive.google.com/file/d/1JFdZHr-jlGdMW0pTaWVDOZtF7FeKSc1S/view?usp=sharing" target="_blank" rel="noopener">View  Certificate</a></h3>
+                
+              </div>
+              
+            </div>
+             
+          </div> 
+            <div class="projectBox">
+                 <div class="card">
+                   <div class="thumb"><img src="res/res21/asset/asset/img/udemy.png" width="180" height="95" style="margin-inline-start: 1%;margin: 6px 2px 0px 2px;"></div>
+                   <div class="infos">
+                     <h6>The Complete Self-Driving Car Course-Applied Deep Learning</h6> <h7>May21</h7>
+                     <h3 class="seats"><a href="https://drive.google.com/file/d/1xiaq6pOni5OZIyMNFiYmcicnLsGAHSOA/view?usp=sharing" target="_blank" rel="noopener">View  Certificate</a></h3>
+                     
+                   </div>
+                   
+                 </div>
+                  
+                 </div> 
+                 
+            
+            <div class="projectBox">
+                 <div class="card">
+                   <div class="thumb"><img src="res/res21/asset/asset/img/stanford.png" width="160" height="60" style="margin-inline-start: 1%;margin: 10px 2px 0px 2px;"> </div>
+                   <div class="infos">
+                     <h6>Probabilistic Graphical Models: Representation</h6> <h7>Ongoing</h7>
+                     
+                     
+                     
+                   </div>
+                   
+                </div>
+
+                
+                  
+            </div>
+                         
+            </div> 
+            <p> </width><h2  class="display-5">Experience:</h2><div class="three">
+              
+              <h1></h1>
+              <ul class="timeline">
+              
+                  <h3 class="title">BeyondSkool &nbsp;&nbsp;-Senior Curriculum Designer</h3>
+                  <div class="information">
+                    
+                    <span class="location">Oct-20 - Present </span>
+                    <br>• Research on syllabi for STEM education, to create courses and lesson plans with defined learning objectives. <br>• The designed curriculum with hands-on projects on microcontrollers, artificial intelligence, app development and other technologies, accredited by internationally acclaimed organization, <a href="https://drive.google.com/file/d/1SQE6aH0N15xcOj-AjvWn7q9vfJjv4i7S/view?usp=sharing" target="_blank" style="text-decoration: underline; color: #00458f">STEM.org</a>.<br>• Developed 100+ hours of course content which has been enrolled by over 33k+ students across 18+ countries.
+              
+                    
+                  </div>
+                  
+             
+                
+
+              </ul>
+              
+              
+            
+            <p> </width><h2  class="display-5">Outreach:</h2><div class="three">
+              <h1></h1> 
+          
+        
+            <div class="jumbotron">
+                <a href="https://www.firstinspires.org/" target="_blank" rel="noopener"><img src="res/res21/asset/asset/img/first.png" width="200" height="65" style="margin-inline-start: 2%;margin: 3px 4px 4px 4px;"></a>
+                <font size="7">|</font> <font size="5">Coach</font>
+                <div style="float: right; clear: right"> 
+                
+                    <iframe  width="440" height="255" src="https://www.youtube.com/embed/RcauUeKkQ_0" title="YouTube video player" frameborder="5" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                
+            
+              <ul>
+              <li> <a href="https://www.firstinspires.org/" target="_blank" rel="noopener" style="text-decoration:underline; color: #00458f "><b>FIRST</b></a> is a global robotics community preparing young people for the future and the world's leading youth-serving nonprofit advancing STEM education.<br>Mentored over 30 students till date for the competition.</p></li>
+              <li><b>FLL 2019:</b> Trained students to construct and code their robot with sensors using effective algorithms. Also helped them make piezoelectric shoes as a project prototype.</li>
+              <li><b>FLL 2020:</b> Extensively mentored a team of hearing and vocally impaired students of an NGO who stood 7th in robot game out of 39 teams! They learnt coding robots from scratch and built a working model of solar tracker and building automation for their project thus nurtured core values in a fun and learn way.</li> 
+              
+              <li>Teams gained real-world problem-solving experiences, helping them to build a better future together.</li></ul>
+              
+              <a href="https://wro-association.org/" target="_blank" rel="noopener"><img src="res/res21/asset/asset/img/wro.png" width="230" height="40" style="margin: 0px 0px 0px 0px;"></a>
+                  <font size="7">|</font> <font size="5">Refree</font>
+                  <br><b><a href="hhttps://wro-association.org/" target="_blank" rel="noopener" style="text-decoration:underline; color: #00458f;">World Robot Olympiad:</a> </b>A Global robotics competition dedicated to science, technology and education.<br>Been appoited as a refree since 2018 to judge the robot designs and robot runs of the competiting teams.
+                 
+                  <div class="container1" style="border-radius:0px; padding: 0em; margin-left: 3px; background-color:; border-style: none; box-shadow: none; flex-direction: none;">
+                    <div class="images row" >
+                  <div style="float: left; clear: right"> 
+                    
+                    
+                       
+                        <img src="res/res21/asset/asset/img/wro0.jpg" />
+                        <img src="res/res21/asset/asset/img/wro1.jpg" />
+                        <img src="res/res21/asset/asset/img/wro3.jpg" />
+                        <img src="res/res21/asset/asset/img/wro4.jpg" />
+                        <img src="res/res21/asset/asset/img/wro5.jpg" />
+                        <img src="res/res21/asset/asset/img/wro6.jpg" />
+                      </div>
+                      </div> <!--images row-->        
+                </div> <!--container-->  
+                </div>
+              </div>
+              <p> </width><h2  class="display-5">Recommendations:</h2><div class="three">
+                <h1></h1>
+                <a href="mailto:jaimin.jpk@gmail.com"><h3>[Available on request]</h3><a><br>
+              </div>
+               </width><h2  class="display-5">In my free time:</h2><div class="three">
+                <h1></h1>
+            <p> On long breaks, I like to go hiking. During the weekends, I spend my time making LEGO robots. <br>  Have a look at some of my <a href="https://bricksafe.com/pages/Jaimin-K/unbrickable" target="_blank"><u>LEGO builds</u>.</a><br> 
+                </p></div>
+              
+          
+          
+          
+  
+                <div class="footer">
+                  Copyright © 2021. Jaimin Kachhadiya. All trademarks, logos and brand names are the property of their respective owners.
+                </div>
+
+</div>
+
+<!-- partial -->  
+
+
+</body>
+
+</html>

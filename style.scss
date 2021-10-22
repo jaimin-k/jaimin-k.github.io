@@ -1,0 +1,118 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700);
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+
+// WIDGET
+.widget {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  font-size: 1rem;
+  font-weight: 400;
+  overflow: hidden;
+  position: relative;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.21);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(255,255,255,0);
+  z-index: 1;
+  
+  .widget__body {
+    padding: 1rem;
+  }
+}
+
+
+// TIMELINE
+.timeline {
+  list-style: none;
+  margin: 0 0 0 10px;;
+  padding: 0;
+  
+  li {
+    position: relative;
+    margin: 0;
+    border-left: 2px solid rgba(0,0,0,.12);
+    padding: 0 0 16px 16px;
+    
+    &:before {
+      content: '';
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      left: -9px;
+      top: 0px;
+      border-radius: 50%;
+      background-color: #fff;
+      padding: 4px;
+      border: 4px solid #546E7A;
+      box-shadow: 0 1px 3px 0 rgba(0,0,0,.21);
+    }
+    
+    @media (min-width: 768px) {
+      padding: 0 0 40px 40px;
+    }
+    
+    .title {
+      font-size: 20px;
+      font-weight: 500;
+      margin: 0;
+    }
+    
+    &:first-child {
+      .title {
+        margin-top: 10px;
+      }
+    }
+    
+    &:last-of-type {
+      border: 0;
+      
+      @media (min-width: 768px) {
+        padding: 0 0 0 40px;
+      }
+      
+      &:before {
+        left: -7px;
+      }
+    }
+    
+    .information {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    
+    .location {
+      font-size: 14px;
+      font-weight: 400;
+    }
+    
+    .time {
+      margin-left: auto;
+      font-size: 12px;
+      font-weight: 300;
+      color: rgba(0,0,0,.54);
+    }
+    
+    p {
+      margin: 0 0 10px;
+      font-size: 14px;
+      color: rgba(0,0,0,.65);
+    }
+  }
+}

@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  display: inline;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+
+}
+.wrapper .button{
+  display: inline-block;
+  height: 35px;
+  width: 30px;
+  float: ;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 0px;
+  cursor: pointer;
+  /*box-shadow: 0px 10px 10px rgba(0,0,0,0.1);*/
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover{
+  width: 130px;
+}
+.wrapper .button .icon{
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  text-align: center;
+  border-radius: 30px;
+  margin-top: 6px;
+  box-sizing: border-box;
+  line-height: 10px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1):hover .icon{
+  background: #333;
+}
+.wrapper .button:nth-child(2):hover .icon{
+  background: #000;
+}
+.wrapper .button:nth-child(3):hover .icon{
+  background:  #ff0000;
+}
+.wrapper .button:nth-child(4):hover .icon{
+  background:  #0077b5;
+}
+.wrapper .button:nth-child(5):hover .icon{
+  background: #7dafff00;
+}
+.wrapper .button .icon i{
+  font-size:18px;
+  line-height: 25px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon i{
+  color: #fff;
+}
+.wrapper .button span{
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 0px;
+  margin-left: 0px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1) span{
+  color: #333;
+}
+.wrapper .button:nth-child(2) span{
+  color: #000;
+}
+.wrapper .button:nth-child(3) span{
+  color:  #ff0000;
+}
+.wrapper .button:nth-child(4) span{
+  color:  #0077b5;
+}
+.wrapper .button:nth-child(5) span{
+  color: #0062ff;
+}
