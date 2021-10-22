@@ -22,10 +22,10 @@ body {
   padding-right: 120px; 
   
   flex-direction: row;
-  max-width: 2000px;
+  
   font-size: 1rem;
   font-weight: 400;
-  overflow: visible;
+  overflow: hidden;
   position: static;
   background: #ffffff;
   /*border-radius: 2px
