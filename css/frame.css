@@ -232,7 +232,7 @@ hr {
 
   font-weight: 100;
   flex-direction: row;
-  flex-wrap: wrap;
+  
   justify-content: center;
   align-items: stretch;
   align-content: stretch;
@@ -261,7 +261,7 @@ hr {
 }
 
 .flex-item {
-  margin: 0 20px;
+  margin: 0 420px;
 }
 
 .left-align {
