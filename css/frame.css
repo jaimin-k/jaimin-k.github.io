@@ -207,9 +207,9 @@ hr {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: right;
   align-items: center;
-  margin-left: 170px ;
+  
   align-content: stretch;
   box-sizing: border-box;
 }
@@ -237,7 +237,7 @@ hr {
   align-items: stretch;
   align-content: stretch;
   box-sizing: border-box;
-  padding-right:  30px;
+  p
 }
 
 .flex-item-stretch {
