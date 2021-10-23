@@ -92,8 +92,8 @@ hr {
 
 .menu {
   position: relative;
-  margin: 0 auto;
-  max-width: 900px;
+  margin: 0 90px 0 90px;
+  
 }
 
 .menu-table {
