@@ -92,8 +92,8 @@ hr {
 
 .menu {
   position: relative;
-  margin: 0 45px 0 40px;
-  
+  margin: 0 auto;
+  max-width: 900px;
 }
 
 .menu-table {
@@ -119,7 +119,6 @@ hr {
   text-decoration: none;
   font-weight: 500;
   flex: 1 auto;
-  margin: 0 230px
 }
 
 .menu-button {
@@ -127,7 +126,7 @@ hr {
   height: 40px;
   display: none;
   cursor: pointer;
-  margin-right: -35px;
+  margin-right: 20px;
 }
 
 .menu-button img {
@@ -208,9 +207,9 @@ hr {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: right;
+  justify-content: space-between;
   align-items: center;
-  
+  margin-left: 170px ;
   align-content: stretch;
   box-sizing: border-box;
 }
@@ -238,7 +237,7 @@ hr {
   align-items: stretch;
   align-content: stretch;
   box-sizing: border-box;
-  p
+  padding-right:  30px;
 }
 
 .flex-item-stretch {
@@ -262,7 +261,7 @@ hr {
 }
 
 .flex-item {
-  margin: 0px 20px;
+  margin: 0 20px;
 }
 
 .left-align {
