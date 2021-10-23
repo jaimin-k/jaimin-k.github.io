@@ -18,7 +18,7 @@ body {
 }
 
 .widget {
-  margin-left: 120px ; /*distance from left side*/
+  padding-left: 120px ; /*distance from left side*/
   padding-right: 120px; 
   
   flex-direction: row;
@@ -26,7 +26,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   overflow: hidden;
-  position: static;
+  position: relative;
   background: #ffffff;
   /*border-radius: 2px
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.21);*/
