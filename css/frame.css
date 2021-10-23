@@ -119,6 +119,7 @@ hr {
   text-decoration: none;
   font-weight: 500;
   flex: 1 auto;
+  margin: 0 230px
 }
 
 .menu-button {
