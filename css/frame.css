@@ -116,6 +116,7 @@ hr {
   color: rgba(255, 255, 255, 0.8);
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 18px;
+  margin-left: -40px;
   text-decoration: none;
   font-weight: 500;
   flex: 1 auto;
@@ -236,7 +237,7 @@ hr {
   align-items: stretch;
   align-content: stretch;
   box-sizing: border-box;
-  padding-right:  30px;
+  padding-right:  15px;
 }
 
 .flex-item-stretch {
