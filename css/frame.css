@@ -126,7 +126,7 @@ hr {
   height: 40px;
   display: none;
   cursor: pointer;
-  margin-right: 20px;
+  margin-right: -35px;
 }
 
 .menu-button img {
