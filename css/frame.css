@@ -98,7 +98,7 @@ hr {
 }
 
 .menu-table {
-  padding: 10px 10px;
+  padding: 6px 0px 10px 10px;
   width: 100%;
   margin: 0;
 }
@@ -121,6 +121,7 @@ hr {
   text-decoration: none;
   font-weight: 500;
   flex: 1 auto;
+  padding: 0px 375px 0px 0px;
 }
 
 .menu-button {
